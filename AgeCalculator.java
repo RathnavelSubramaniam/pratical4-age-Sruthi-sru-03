@@ -35,7 +35,7 @@ public class AgeCalculator {
 
 		LocalDate currentDate=LocalDate.now();
 
-		System.out.println("Today's date is"+formatter.format(currentDate));
+		System.out.println("Todays date is"+formatter.format(currentDate));
 
 		Period age = Period.between(birthDate, currentDate);
 
