@@ -31,11 +31,11 @@ public class AgeCalculator {
 
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM,dd,yyyy");
 
-		System.out.println("Your birth date is" + formatter.format(birthDate));
+		System.out.println("Your birth date is " + formatter.format(birthDate));
 
 		LocalDate currentDate=LocalDate.now();
 
-		System.out.println("Todays date is"+formatter.format(currentDate));
+		System.out.println("Todays date is "+formatter.format(currentDate));
 
 		Period age = Period.between(birthDate, currentDate);
 
