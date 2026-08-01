@@ -15,3 +15,7 @@ Your age is: 31 years.
 Your birth date is July 07, 1995
 Todays date is August 5, 2026
 Your age is: 31 years.
+
+Your birth date is July 07, 1995
+Todays date is August 1, 2026
+Your age is: 31 years.
