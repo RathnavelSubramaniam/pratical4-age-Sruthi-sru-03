@@ -1,11 +1,53 @@
-import java.io.*;
-import java.util.*;
 
-class AgeCalculator
-  {
+import java.time.LocalDate;
 
-public static void main(String args[])
-    {
+import java.time.Period;
+
+import java.time.format.DateTimeFormatter;
+
+import java.util.Scanner;
+
+public class AgeCalculator {
+
+	public static void main(String[] args)
+
+	{
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter the month you were born(1 to 12):");
+
+		int month = scanner.nextInt();
+
+		System.out.println("Enter the day of the month you were born:");
+
+		int day = scanner.nextInt();
+
+		System.out.println("Enter the year you were born(fourdigits):");
+
+		int year = scanner.nextInt();
+
+		LocalDate birthDate = LocalDate.of(year,month,day);
+
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM,dd,yyyy");
+
+		System.out.println("Your birth date is" + formatter.format(birthDate));
+
+		LocalDate currentDate=LocalDate.now();
+
+		System.out.println("Today's date is"+formatter.format(currentDate));
+
+		Period age = Period.between(birthDate, currentDate);
+
+		int ageInYears=age.getYears();
+
+		System.out.println("Your age is:"+ageInYears+"years.");
+
+	}
+
+
+
+}
 
 
 
@@ -18,10 +60,6 @@ public static void main(String args[])
 
 
 
+    
 
-
-
-
-    }
-
-  }
+  
