@@ -29,7 +29,7 @@ public class AgeCalculator {
 
 		LocalDate birthDate = LocalDate.of(year,month,day);
 
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM,dd,yyyy");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy");
 
 		System.out.println("Your birth date is " + formatter.format(birthDate));
 
@@ -43,7 +43,7 @@ public class AgeCalculator {
 
 		int ageInYears=age.getYears();
 
-		System.out.println("Your age is:"+ageInYears+"years.");
+		System.out.println("Your age is: "+ageInYears+" years.");
 
 	}
 
